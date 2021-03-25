@@ -1,0 +1,79 @@
+.business {
+  padding: 150px 0 100px;
+  position: relative;
+
+  .left-circle {
+    position: absolute;
+    top: 0;
+    z-index: -999;
+
+    img {
+      width: 75%;
+    }
+  }
+
+  .title {
+    text-align: center;
+
+    @include heading2;
+
+    p {
+      margin: auto;
+      color: $gray;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 1.6;
+      margin-bottom: 60px;
+    }
+  }
+
+  .three-box {
+    display: flex;
+    justify-content: space-between;
+
+    .box {
+      width: 320px;
+      text-align: center;
+      border-radius: 10px;
+      margin-right: 10px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include heading3;
+
+      h3 {
+        margin-top: 20px;
+      }
+
+      p {
+        color: $gray;
+        font-size: 16px;
+        padding: 0 30px;
+        line-height: 1.35;
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  .learn-more {
+    padding: 30px 0 0;
+    text-align: center;
+
+    a {
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 0.9px;
+      padding: 12px 36px;
+      border: 1px solid #000;
+      border-radius: 10px;
+
+      &:hover {
+        color: $white;
+        background: $green;
+        border-color: $green;
+      }
+    }
+  }
+}

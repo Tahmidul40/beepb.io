@@ -1,0 +1,36 @@
+.analysis {
+  padding: 100px 0;
+  text-align: center;
+
+  .title {
+    @include heading2;
+    margin-bottom: 70px;
+  }
+
+  .three-box {
+    display: flex;
+    justify-content: space-between;
+
+    .box {
+      padding: 16px;
+
+      &:first-child {
+        img {
+          padding: 30px 0 24px;
+        }
+      }
+
+      img {
+        width: 60px;
+        padding: 30px 0;
+      }
+
+      @include heading3;
+
+      p {
+        color: $gray;
+        font-size: 16px;
+      }
+    }
+  }
+}

@@ -1,0 +1,140 @@
+.container {
+  max-width: 1050px;
+  margin: auto;
+}
+
+.landing {
+  max-width: 100%;
+  background: url(../img/hero-bg-top.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  header {
+    max-width: 1050px;
+    margin: auto;
+    padding: 50px 0 70px 0;
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      img {
+        width: 140px;
+        height: 35px;
+      }
+
+      nav ul li {
+        display: inline;
+        margin-left: 30px;
+
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          color: $white;
+          letter-spacing: 0.9px;
+
+          &:hover {
+            color: $green;
+          }
+        }
+
+        &:last-child {
+          font-size: 13px;
+          padding: 10px 20px;
+          background: $green;
+          border-radius: 10px;
+          &:hover {
+            background: $g-hover;
+          }
+
+          a {
+            &:hover {
+              color: $white;
+            }
+          }
+        }
+      }
+
+      .display-nav {
+        //visibility: hidden;
+        display: none;
+      }
+    }
+  }
+  .hero {
+    display: flex;
+    align-items: center;
+    color: $white;
+    padding-bottom: 105px;
+
+    .left {
+      width: 36.999%;
+    }
+
+    .right {
+      width: 64.999%;
+      padding-left: 30px;
+
+      .title {
+        h1 {
+          max-width: 500px;
+          font-size: 40px;
+          font-weight: 300;
+          margin-bottom: 25px;
+        }
+
+        p {
+          max-width: 500px;
+          color: $gray;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 1.6;
+          margin-bottom: 30px;
+        }
+      }
+
+      .hero-btn {
+        display: flex;
+
+        a {
+          color: $white;
+
+          &:first-child {
+            background: $green;
+            padding: 10px 25px;
+            border-radius: 10px;
+            margin-right: 20px;
+
+            &:hover {
+              color: $white;
+            }
+          }
+
+          &:hover {
+            background: $g-hover;
+          }
+
+          &:hover {
+            color: $green;
+          }
+        }
+
+        .play-btn {
+          display: flex;
+          align-items: center;
+
+          i {
+            margin-right: 10px;
+            /*
+            &:hover {
+              color: $green;
+            }
+            */
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,295 @@
+@media (max-width: 1079.98px) {
+  // container
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  // landing section
+  .landing {
+    header {
+      nav {
+        display: none;
+      }
+
+      .display-nav {
+        display: block !important;
+        // visibility: inherit !important;
+        font-size: 13px;
+        padding: 10px 20px;
+        background: $green;
+        border-radius: 10px;
+        a {
+          color: $white !important;
+        }
+      }
+    }
+
+    .hero {
+      flex-direction: row-reverse;
+      .right {
+        padding-left: 0 !important;
+        .title {
+          h1 {
+            font-size: 40px;
+          }
+          p {
+            font-size: 16px;
+          }
+        }
+
+        .hero-btn {
+          display: flex;
+          flex-direction: column;
+
+          a {
+            width: 250px;
+            margin-bottom: 20px;
+            &:first-child {
+              text-align: center;
+            }
+          }
+
+          .play-btn {
+            display: flex;
+            align-items: center !important;
+
+            a {
+              margin-bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // analysis section
+  .analysis {
+    padding: 100px 0;
+
+    .title {
+      margin-bottom: 30px;
+
+      h2 {
+        padding: 0 30px;
+      }
+    }
+
+    .three-box {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      .box {
+        width: 320px;
+      }
+    }
+  }
+
+  // download section
+  .download {
+    .down-flex {
+      padding: 0 0 100px;
+      text-align: center;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .left,
+      .right {
+        width: 320px;
+        padding: 50px 0 50px;
+
+        .bottom,
+        .top {
+          padding-left: 0px;
+
+          p {
+            color: $gray;
+            font-size: 18px;
+            margin-bottom: 30px;
+            width: 100%;
+          }
+        }
+      }
+
+      .middle {
+        order: 3;
+        width: 320px;
+        text-align: center;
+
+        img {
+          width: 100%;
+          padding-bottom: 40px;
+          display: none;
+        }
+
+        a {
+          font-size: 14px;
+          font-weight: 400;
+          color: #ffffff;
+          background: #14b45c;
+          letter-spacing: 0.9px;
+          padding: 12px 36px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+
+  // business section
+  .business {
+    padding: 100px 0 80px;
+
+    .left-circle img {
+      width: 50%;
+    }
+
+    .three-box {
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+
+      .box p {
+        margin-bottom: 50px;
+      }
+    }
+  }
+
+  // testimonial section
+  .testimonial {
+    padding: 50px 0;
+
+    .right-circle {
+      top: -325px;
+
+      img {
+        max-width: 45px;
+      }
+    }
+
+    .my-flex {
+      .order-one {
+        order: 1;
+        display: none;
+      }
+
+      .order-two {
+        order: 2;
+      }
+
+      .order-three {
+        order: 3;
+        display: none;
+      }
+    }
+  }
+
+  // store section
+  .store {
+    padding: 50px 0 0;
+
+    .wrapper {
+      p {
+        max-width: 90%;
+      }
+    }
+  }
+
+  // footer
+  footer {
+    .footer-bg {
+      position: absolute;
+      top: -225px;
+    }
+
+    .footer-links {
+      display: flex;
+      //flex-direction: column;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+      padding-bottom: 20px;
+      text-align: center;
+
+      .link {
+        margin-bottom: 60px;
+      }
+
+      ul li {
+        width: 180px;
+      }
+    }
+
+    .copyright {
+      flex-direction: column;
+      .copyright-text {
+        margin-bottom: 30px;
+      }
+    }
+
+    .copy-bg {
+      height: 100%;
+    }
+  }
+}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  // landing hero section
+  .hero {
+    flex-direction: row-reverse;
+    .right {
+      .title {
+        h1 {
+          font-size: 35px !important;
+        }
+        p {
+          font-size: 13px !important;
+        }
+      }
+      a {
+        font-size: 13px !important;
+      }
+    }
+  }
+
+  // analysis section
+  .analysis {
+    padding: 50px 0;
+  }
+
+  // download
+  .download .down-flex .left,
+  .download .down-flex .right {
+    padding: 0;
+  }
+
+  .download .down-flex .middle {
+    margin: 20px 0 0;
+  }
+
+  //footer
+  .copy-bg {
+    height: 890px !important;
+  }
+}
+
+@media (max-width: 599.98px) {
+  // footer
+  .copy-bg {
+    height: 100% !important;
+  }
+}
+
+@media (max-width: 540.98px) {
+  // landing hero section
+  .hero {
+    .left {
+      display: none;
+    }
+    .right {
+      width: 100% !important;
+    }
+  }
+
+  .footer-bg {
+    top: -125px !important;
+  }
+}
