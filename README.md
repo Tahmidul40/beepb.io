@@ -1,6 +1,4 @@
-# Beepb.io
-
-## Coded by ME.
+# Beepb.io Coded by ME.
 
 I coded beepb.io from the scratch.
 
